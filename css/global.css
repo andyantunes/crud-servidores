@@ -40,10 +40,27 @@ article h1 {
 
 form {
   margin: 20px 0;
+  width: 50%;
+  text-align: center;
 }
 
 form div {
   margin: 10px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.inputFormContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.input-options input,
+.input-options select,
+.inputFormContainer input {
+  height: 25px;
+  width: 220px;
 }
 
 ul {
@@ -89,4 +106,12 @@ footer small {
 
 .list-container {
   margin-top: 20px;
+  width: 50%;
+}
+
+button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
 }
