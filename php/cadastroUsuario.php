@@ -9,8 +9,11 @@ $password = $_POST['password'];
 $email = $_POST['email'];
 $phone = $_POST['phone'];
 
+$options = ['cost' => 14];
+$hash = password_hash($password, PASSWORD_DEFAULT, $options);
+
 $sql = 'insert into users (UserName, UserPassword, UserEmail, UserPhone) 
-        values("'.$name.'", "'.$password.'", "'.$email.'", "'.$phone.'")';
+        values("'.$name.'", "'.$hash.'", "'.$email.'", "'.$phone.'")';
 $rs = mysqli_query($mysqli, $sql);
 
 if($rs) {
@@ -23,5 +26,5 @@ mysqli_close($mysqli);
 
 header('Content-Type: application/json');
 echo json_encode(array(
-    'return' => $rs
+    'return' => $return
 ));
