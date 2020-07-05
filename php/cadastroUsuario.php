@@ -1,8 +1,7 @@
 <?php
 header('Content-Type: text/html; charset=utf-8');
-session_start();
+header('Access-Control-Allow-Origin: *');
 
-ob_start();
 include_once("databaseConnection.php");
 
 $name = $_POST['name'];
