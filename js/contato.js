@@ -21,9 +21,6 @@ const UserRegister = () => {
       Swal.close();
     }
   });
-  // .fail((jqXHR, textStatus, msg) => {
-  //   //   alert(msg);
-  // });
 };
 
 const UserRegisterValidation = () => {
@@ -37,7 +34,7 @@ const UserRegisterValidation = () => {
     cadName.style.border = "2px solid red";
     error = false;
   } else {
-    cadName.style.border = "unset";
+    cadName.style.border = "1px solid #ced4da";
     error = true;
   }
 
@@ -45,7 +42,7 @@ const UserRegisterValidation = () => {
     cadPassword.style.border = "2px solid red";
     error = false;
   } else {
-    cadPassword.style.border = "unset";
+    cadPassword.style.border = "1px solid #ced4da";
     error = true;
   }
 
@@ -56,7 +53,7 @@ const UserRegisterValidation = () => {
     cadEmail.style.border = "2px solid red";
     error = false;
   } else {
-    cadEmail.style.border = "unset";
+    cadEmail.style.border = "1px solid #ced4da";
     error = true;
   }
 
@@ -64,7 +61,7 @@ const UserRegisterValidation = () => {
     cadPhone.style.border = "2px solid red";
     error = false;
   } else {
-    cadPhone.style.border = "unset";
+    cadPhone.style.border = "1px solid #ced4da";
     error = true;
   }
 
@@ -78,7 +75,7 @@ const AddEventBlurInputs = () => {
     let inputElement = document.querySelector(`#${inputId}`);
     inputElement.addEventListener("focus", (event) => {
       let element = event.target;
-      element.style.border = "unset";
+      element.style.border = "1px solid #ced4da";
     });
   });
 };
@@ -91,4 +88,11 @@ sendMessageButton.addEventListener("click", (event) => {
   }
 });
 
+// Arrumar click no botão de mostrar e esconder senha
+showHidePassword.addEventListener("click", (event) => {
+  console.log(event);
+  ShowHidePassword(showHidePassword, cadPassword);
+});
+
 AddEventBlurInputs();
+PhoneMask(cadPhone);

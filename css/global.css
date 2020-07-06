@@ -1,0 +1,13 @@
+.form-group {
+  position: relative;
+}
+
+.fa-eye,
+.fa-eye-slash {
+  position: absolute;
+  right: 0.75rem;
+  top: 17%;
+  font-size: 24px;
+  opacity: 0.8;
+  cursor: pointer;
+}
