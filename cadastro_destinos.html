@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>LOFI TRIPS </title>
+        <link rel="icon" type="image/x-icon" href="assets/img/logotipo.png" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="assets/img/logotipo.png" alt="" /></a><button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu<i class="fas fa-bars ml-1"></i></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="cadastro.html">CADASTRE-SE</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">DESTINOS</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">SOBRE</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">LOFI</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="contato.html">CONTATO</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">LOFI Trips</div>
+                <div class="masthead-heading text-uppercase"></div>
+                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#portfolio">Mais roteiros em sua vida!</a>
+            </div>
+        </header>
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">CADASTRE SUAS DICAS DE DESTINO</h2>
+                 <!--   <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
+                </div>
+                <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                    <div class="row align-items-stretch mb-5">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input class="form-control" id="phone" type="tel" placeholder="Dê um título a sua avaliação" required="required" data-validation-required-message="Favor preencher o título" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <select name =tipo id="selectDica" class="custom-select custom-select-lg mb-3">
+                                    <option selected>De que gostaria de enviar dicas?</option>
+                                    <option value="1">PRAIA</option>
+                                    <option value="2">MONTANHA</option>
+                                    <option value="3">CIDADE</option>
+                                    <option value="4">NATUREZA</option>
+                                </select>                        
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" id="phone" type="tel" placeholder="Digite a cidade..." required="required" data-validation-required-message="Favor preencher a cidade" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <select name =tipo id="tipoDica" class="custom-select custom-select-lg mb-3">
+                                    <option selected>Dê uma nota para sua experiência:</option>
+                                    <option value="1">PÉSSIMO</option>
+                                    <option value="2">RUIM</option>
+                                    <option value="3">REGULAR</option>
+                                    <option value="4">BOM</option>
+                                    <option value="5">EXCELENTE</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <select name =tipo id="periodo" class="custom-select custom-select-lg mb-3">
+                                    <option selected>Quando ocorreu sua experiência?</option>
+                                    <option value="1">JANEIRO</option>
+                                    <option value="2">FEVEREIRO</option>
+                                    <option value="3">MARÇO</option>
+                                    <option value="4">ABRIL</option>
+                                    <option value="5">MAIO</option>
+                                    <option value="6">JUNHO</option>
+                                    <option value="7">JULHO</option>
+                                    <option value="8">AGOSTO</option>
+                                    <option value="9">SETEMBRO</option>
+                                    <option value="10">OUTUBRO</option>
+                                    <option value="11">NOVEMBRO</option>
+                                    <option value="12">DEZEMBRO</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group form-group-textarea mb-md-0">
+                                <textarea class="form-control" id="btnDestino" placeholder="Conte as pessoas sobre a sua experiência" required="required" data-validation-required-message="Please enter a message."></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div id="success"></div>
+                        <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">ENVIAR</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-left">Copyright © ALLIN WEB 2020 | Anderson • Larissa</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a><a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a><a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="col-lg-4 text-lg-right"><a class="mr-3" href="#!">Privacy Policy</a><a href="#!">Terms of Use</a></div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Contact form JS-->
+        <script src="assets/mail/jqBootstrapValidation.js"></script>
+        <script src="assets/mail/contact_me.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
