@@ -6,7 +6,7 @@ const UserRegister = () => {
 
   $.ajax({
     method: "POST",
-    url: "http://localhost/crud-servidores//php/cadastroUsuario.php",
+    url: "http://localhost/crud-servidores/php/cadastroUsuario.php",
     data: {
       name: name,
       password: password,
@@ -89,10 +89,10 @@ sendMessageButton.addEventListener("click", (event) => {
 });
 
 // Arrumar click no botão de mostrar e esconder senha
-showHidePassword.addEventListener("click", (event) => {
-  console.log(event);
-  ShowHidePassword(showHidePassword, cadPassword);
-});
+// showHidePassword.addEventListener("click", (event) => {
+//   console.log(event);
+//   ShowHidePassword(showHidePassword, cadPassword);
+// });
 
 AddEventBlurInputs();
 PhoneMask(cadPhone);

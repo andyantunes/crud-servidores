@@ -2,7 +2,7 @@
 header('Content-Type: text/html; charset=utf-8');
 header('Access-Control-Allow-Origin: *');
 
-include_once("databaseConnection.php");
+include_once('./databaseConnection.php');
 
 $name = $_POST['name'];
 $password = $_POST['password'];
