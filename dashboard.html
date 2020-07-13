@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOFI</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-light">
+    <div class="text-center font-weight text-light bg-dark p-2 mb-4">
+        <h1>LOFI</h1>
+    </div>
+    <div class="container">
+        <div class="text-dark text-center">
+            <div class="row">
+                <div class="col-6">
+                    <button type="button" id="btnUser" class="btn btn-outline-dark mb-2">USUÁRIO</button>
+                    <input type="hidden" id="acao" value="usuario" />
+                </div>
+                <div class="col-6">
+                    <button type="button" id="btnDestinos" class="btn btn-outline-dark mb-2">DESTINOS</button>
+                    <input type="hidden" id="acao" value="destinos" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <table id="tDicas" class="table table-dark table-striped text-center">
+           
+
+                <tfoot>
+                </tfoot>
+            </table>
+        </div>
+        <div class="row">
+            <table id="tDados" class="table table-dark table-striped text-center">
+                
+
+                <tfoot>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
+   
+
+    <script src="dashscript.js"></script>
+   
+</body>
+
+</html>
