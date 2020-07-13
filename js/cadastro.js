@@ -6,7 +6,7 @@ const UserRegister = () => {
 
   $.ajax({
     method: "POST",
-    url: "http://localhost/crud-servidores/php/cadastroUsuario.php",
+    url: "http://localhost/crud-servidores/services/cadastroUsuario.php",
     data: {
       name: name,
       password: password,

@@ -4,16 +4,16 @@ header('Access-Control-Allow-Origin: *');
 
 include_once('./databaseConnection.php');
 
-$name = $_POST['name'];
-$local = $_POST['local'];
+$title = $_POST['title'];
+$note = $_POST['note'];
 $city = $_POST['city'];
-$country = $_POST['country'];
-$review = $_POST['review'];
-$tips = $_POST['tips'];
+$type = $_POST['type'];
+$period = $_POST['period'];
+$description = $_POST['description'];
 
 $sql = 'insert into destinations
-        (DestinationName, DestinationLocal, City, Country, Review, Tips)
-        values("'.$name.'", "'.$local.'", "'.$city.'", "'.$country.'", "'.$review.'", "'.$tips.'")';
+        (DestinationName, DestinationType, City, ExperienceNote, MonthExperience, Review)
+        values("'.$title.'", "'.$note.'", "'.$city.'", "'.$type.'", "'.$period.'", "'.$description.'")';
 $rs = mysqli_query($mysqli, $sql);
 
 if($rs) {
