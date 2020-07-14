@@ -9,8 +9,9 @@ enviaCadastro.addEventListener("click", (event) => {
 
   $.ajax({
     type: "POST",
-    url: "http://localhost/crud-servidores/services/cadastroDestinos.php",
+    url: "http://172.17.217.6/services/cadastroDestinos.php",
     data: {
+      action: "insertDestinos",
       title: title,
       note: note,
       city: city,

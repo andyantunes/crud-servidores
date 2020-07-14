@@ -11,3 +11,7 @@
   opacity: 0.8;
   cursor: pointer;
 }
+
+.hide-element {
+  display: none !important;
+}
